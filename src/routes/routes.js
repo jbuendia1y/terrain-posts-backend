@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-const Imgs = require('../models/imgs')
+const Posts = require('../models/posts')
 
 router.get('/',async(req,res)=>{
-    const imgs = await Imgs.find()
-    res.send(imgs)
+
+    const posts = await Posts.find()
+    res.send(posts)
 })
 
 module.exports = router
