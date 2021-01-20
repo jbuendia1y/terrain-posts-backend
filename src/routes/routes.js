@@ -9,4 +9,9 @@ router.get('/',async(req,res)=>{
     res.send(posts)
 })
 
+router.get('/post/:_id',async(req,res)=>{
+    const post = await Posts.find(req.params)
+    res.send(post)
+})
+
 module.exports = router
