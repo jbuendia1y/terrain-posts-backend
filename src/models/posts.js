@@ -12,7 +12,12 @@ const PostSchema = new Schema({
         name : String,
         url : String
     }],
-    images : [String]
+    images : [String],
+    features : {
+        area : String,
+        offices : String,
+        toilets : String
+    }
 })
 
 module.exports = mongoose.model('post',PostSchema)
