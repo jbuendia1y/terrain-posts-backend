@@ -17,6 +17,9 @@ const PostSchema = new Schema({
         area : String,
         offices : String,
         toilets : String
+    },
+    map : {
+        url : String
     }
 })
 
