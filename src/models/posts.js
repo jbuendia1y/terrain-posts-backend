@@ -4,22 +4,29 @@ const Schema = mongoose.Schema;
 const PostSchema = new Schema({
     title : String,
     subtitle : String,
+
     description : {
         title : String,
         paragraph : String
     },
+
     contact : [{
         name : String,
         url : String
     }],
+
     images : [String],
+
     features : {
         area : String,
         offices : String,
-        toilets : String
+        toilets : String,
+        parkings : String
     },
+
     map : {
-        url : String
+        url : String,
+        ubication : String
     }
 })
 
